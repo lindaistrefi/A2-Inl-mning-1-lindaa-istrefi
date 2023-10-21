@@ -1,0 +1,173 @@
+
+body {
+    background: linear-gradient(rgba(231, 196, 192, 0.968), rgb(242, 116, 110));
+    background-size:100% 350%;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: auto;
+  }
+  
+  .box {
+    background-color: white;
+    border: 1px solid rgb(252, 249, 249);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(221, 151, 151);
+    text-align: center;
+    align-self: center;
+    margin: 0px 500px;
+    cursor: auto;
+    animation: slideInFadeIn 0.6s 1;
+  }
+  
+  @keyframes slideInFadeIn {
+    0% {
+      transform: translateY(-60%);
+    }
+    50% {
+      transform: translateY(60%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .textcontent {
+  
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 22px;
+  }
+  
+  h1 {
+  
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin: -5px;
+    margin-bottom: 1px;
+    margin-top: 5px;
+  }
+  
+  #todoInput {
+  
+    width: 250px;
+    height: 33px;
+    border: 1px solid rgb(103, 96, 96);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  #todoInput:focus {
+  
+    outline: 1.5px solid blue;
+  }
+  
+  
+  #addTodo {
+  
+    font-size: 20px;
+    font-weight: 540;
+    text-align: center;
+    padding: 6px 10px 6px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: auto;
+  }
+  
+  #addTodo:hover {
+  
+    background-color: rgb(229, 225, 225);
+    border: 1px solid gray;
+  }
+  
+  li {
+    margin-top: 8px;
+    list-style: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    animation: fadeUpwards 0.3s ease-in forwards;
+    
+  }
+  
+  @keyframes fadeUpwards {
+  
+    0% {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+  }
+  
+  span:hover {
+  
+    text-decoration: line-through;
+  }
+  
+  span.trashcan {
+  
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 18px;
+  
+  }
+  
+  .completed span {
+  
+    text-decoration: line-through;
+    color: rgb(147, 141, 141);
+    transition: 0.2s;
+  }
+  
+  .completed span.trashcan {
+  
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  small {
+    
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(190, 31, 31);
+    animation: blinkRed 0.6s linear 3;
+  }
+  
+  @keyframes blinkRed {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  
