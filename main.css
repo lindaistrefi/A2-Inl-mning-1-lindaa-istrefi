@@ -1,8 +1,11 @@
 
-body {
-    background: linear-gradient(rgba(231, 196, 192, 0.968), rgb(242, 116, 110));
-    background-size:100% 350%;
-    font-family: Arial, Helvetica, sans-serif;
+
+html{
+   
+  background: linear-gradient(rgba(231, 196, 192, 0.968),rgb(242, 116, 110)) no-repeat;
+  background-size: 220vh 100vh;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
     cursor: auto;
   }
   
@@ -80,8 +83,7 @@ body {
   
     outline: 1.5px solid blue;
   }
-  
-  
+    
   #addTodo {
   
     font-size: 20px;
@@ -148,26 +150,28 @@ body {
     margin-left: 10px;
     cursor: pointer;
   }
+
+small {
+ 
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(190, 31, 31);
   
-  small {
-    
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-    color: rgb(190, 31, 31);
-    animation: blinkRed 0.6s linear 3;
-  }
+}
+
+.myError{
+  animation: errorAnimation 0.5s 3;
+}
   
-  @keyframes blinkRed {
+  @keyframes errorAnimation{
     0% {
       opacity: 0;
     }
-    50% {
+    100% {
       opacity: 1;
     }
-    100% {
-      opacity: 0;
-    }
   }
-  
+
+
   

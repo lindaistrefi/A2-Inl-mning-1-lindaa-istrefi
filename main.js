@@ -31,12 +31,16 @@ button.addEventListener("click", function () {
 
     // check that text is not empty
 
+
     if (text.length == 0) {
-        info.innerText = "Input must not be empty";
+        info.innerText = "input must not be empty"
+        info.classList.add("myError"); //adding the animation error through adding a class to <small>
         return;
     }
-    else {
-        info.innerText = "";
+    else{
+        info.innerText ="";
+        info.classList.remove("myError"); // removing the animation error when input-value is !==0
+
     }
 
     // add todo to toDoArray 
